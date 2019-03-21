@@ -26,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/items', items);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
@@ -35,6 +36,15 @@ app.use(function (req, res, next) {
 });
 
 // error handlers
+
+if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('frontend/build'));
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+
+}
+
 
 // development error handler
 // will print stacktrace
@@ -57,6 +67,16 @@ app.use(function (err, req, res, next) {
         error: {}
     });
 });
+
+//DATABASE Connection
+
+mongoose
+    .connect('mongodb+srv://nicola:samsung330@cluster0-8t26p.mongodb.net/prova?retryWrites=true')
+    .then(() => console.log('mongodb connected sucker'))
+    .catch(err => console.log(err));
+
+
+
 
 app.set('port', process.env.PORT || 5000);
 

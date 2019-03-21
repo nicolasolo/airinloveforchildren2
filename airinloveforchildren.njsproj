@@ -41,7 +41,13 @@
     <Compile Include="frontend\src\components\SmallCArds2.js" />
     <Compile Include="frontend\src\index.js" />
     <Compile Include="frontend\src\serviceWorker.js" />
+    <Compile Include="models\Item.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\index.js" />
+    <Compile Include="routes\items.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="routes\users.js" />
     <Content Include="frontend\package-lock.json" />
     <Content Include="frontend\package.json" />
@@ -70,6 +76,7 @@
     <Folder Include="frontend\src\components\" />
     <Folder Include="frontend\src\img\" />
     <Folder Include="frontend\src\img\icons\" />
+    <Folder Include="models\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
     <Folder Include="public\javascripts\" />
