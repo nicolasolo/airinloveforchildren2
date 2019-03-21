@@ -30,6 +30,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
+    <Compile Include="frontend\src\actions\types.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="frontend\src\App.js" />
     <Compile Include="frontend\src\App.test.js" />
     <Compile Include="frontend\src\components\AppBar.js" />
@@ -40,7 +43,19 @@
     <Compile Include="frontend\src\components\SmallCards1.js" />
     <Compile Include="frontend\src\components\SmallCArds2.js" />
     <Compile Include="frontend\src\index.js" />
+    <Compile Include="frontend\src\actions\itemActions.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frontend\src\reducers\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="frontend\src\reducers\itemReducer.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="frontend\src\serviceWorker.js" />
+    <Compile Include="frontend\src\Store.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="models\Item.js">
       <SubType>Code</SubType>
     </Compile>
@@ -76,6 +91,8 @@
     <Folder Include="frontend\src\components\" />
     <Folder Include="frontend\src\img\" />
     <Folder Include="frontend\src\img\icons\" />
+    <Folder Include="frontend\src\actions\" />
+    <Folder Include="frontend\src\reducers\" />
     <Folder Include="models\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />
