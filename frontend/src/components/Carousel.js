@@ -80,6 +80,7 @@ const styles = theme => ({
 });
 
 class SwipeableTextMobileStepper extends React.Component {
+
     state = {
         activeStep: 0,
     };

@@ -2,9 +2,11 @@
   "name": "airinloveforchildren",
   "version": "1.0.0",
   "engines": {
-    "node": "10.3.0"
+    "node": "10.3.0",
+    "main": "app.js"
   },
   "scripts": {
+    "frontend-intall": "npm install --prefix frontend",
     "start": "node app.js",
     "server": "nodemon app.js",
     "frontend": "npm start --prefix frontend",

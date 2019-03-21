@@ -15,12 +15,12 @@ export default class ImmageGallery extends React.Component {
                 <Row>
             <Col sm="6" md="3" >
                         <Media>
-                            <img className="zoom" src={banner} Height="150" Width="100%" alt="banner" />
+                            <img className="zoom" src={banner} height="150" width="100%" alt="banner" />
                    </Media> 
             </Col>
                     <Col sm="6" md="3">
                 <Media>
-                            <img className="zoom" src={banner} Height="150" Width="100%" alt="banner" />
+                            <img className="zoom" src={banner} height="150" width="100%" alt="banner" />
                    </Media> 
             </Col>
                     <Col sm="6" md="3">

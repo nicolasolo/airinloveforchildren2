@@ -39,6 +39,9 @@
     <Compile Include="frontend\src\components\Carousel.js" />
     <Compile Include="frontend\src\components\ImmageGallery.js" />
     <Compile Include="frontend\src\components\Jumbotron.js" />
+    <Compile Include="frontend\src\components\ShoppingList.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="frontend\src\components\SmallCard3.js" />
     <Compile Include="frontend\src\components\SmallCards1.js" />
     <Compile Include="frontend\src\components\SmallCArds2.js" />

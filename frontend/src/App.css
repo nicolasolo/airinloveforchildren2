@@ -14,8 +14,6 @@ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans 
 color:crimson;
 font-size:1rem;
 margin-left:25px;
-align-items:left;
-text-align:left;
 display:inline-block;
 width:200px;
 }
@@ -28,7 +26,6 @@ nav-button{
     width:20px;
     height:15px;
     background-color:red transparent;
-    align-items:right;
     margin-right:5px;
     margin-top:5px;
     display:inline-block;
@@ -78,3 +75,29 @@ nav-button{
     transform: rotate(360deg);
   }
 }
+
+
+.card{
+    display:inline-flex;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+
+.details{
+    display: flex; 
+    flex-direction: column;
+}
+
+
+.content{
+    flex: 0 0 ;
+}
+
+
+charity{
+    height: 58px;
+    width: 58px;
+}
+
+
